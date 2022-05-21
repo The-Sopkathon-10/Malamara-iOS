@@ -12,7 +12,7 @@ import SnapKit
 
 class ArchiveViewController: UIViewController {
 
-    private var archiveList: [Question] = []
+    private var archiveList: [Archive] = Archive.dummy
 
     private let profileImageView: UIImageView = {
         let iv = UIImageView()
@@ -67,7 +67,7 @@ class ArchiveViewController: UIViewController {
 
 
     override func viewWillAppear(_ animated: Bool) {
-        getUserArchive()
+        // getUserArchive()
     }
 
     override func viewDidLoad() {
@@ -139,7 +139,7 @@ class ArchiveViewController: UIViewController {
             result in
                 switch result {
                 case .success(let data):
-                    if let data = data as? [Question] {
+                    if let data = data as? [Archive] {
                         print("되는지?")
                     }
                 case .requestErr(_):
