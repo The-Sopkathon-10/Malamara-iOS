@@ -27,11 +27,8 @@ final class HomeViewController: UIViewController {
         setLottieView()
         setDelegate()
         setUI()
-        
     }
     
-    
-
     @IBAction func questionEditingChanged(_ sender: Any) {
         guard let count = questionTextField.text?.count else { return }
         checkMaxLength(textField: questionTextField, maxLength: 12)
@@ -41,7 +38,6 @@ final class HomeViewController: UIViewController {
         }
         playButton.isEnabled = true
     }
-    
     
     @IBAction func playButtonDidTap(_ sender: Any) {
         
@@ -63,9 +59,9 @@ final class HomeViewController: UIViewController {
     }
     
     @IBAction func archiveButtonDidTap(_ sender: Any) {
-        
-        // 아카이브로 넘어가기
-        
+        let arvc = ArchiveViewController()
+        arvc.modalPresentationStyle = .fullScreen
+        self.present(arvc, animated: true)
     }
     
     private func setUI() {
