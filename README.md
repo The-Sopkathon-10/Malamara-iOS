@@ -9,6 +9,13 @@
 </br>
 
 
+### 구현영상
+![KakaoTalk_Photo_2022-05-22-08-29-23](https://user-images.githubusercontent.com/81313960/169672180-c6760e84-52c0-4886-99ad-adc73cff8369.gif)
+
+
+</br>
+
+
 ### 🍗 iOS-Developers
 
 | 김수연 | 윤수빈 | 황찬미  |
@@ -90,11 +97,6 @@ dev-chanmi
 </br>
 ### 📷 Team Photo
 <img src="https://user-images.githubusercontent.com/81313960/169656982-a24e9a9c-27d7-46c9-8897-ec1f70c11add.jpg" width="400">
-
-
-
-## 구현영상
-![KakaoTalk_Photo_2022-05-22-08-29-23](https://user-images.githubusercontent.com/81313960/169672180-c6760e84-52c0-4886-99ad-adc73cff8369.gif)
 
 
 
