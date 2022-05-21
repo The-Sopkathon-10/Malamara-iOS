@@ -26,18 +26,36 @@ class BaseService {
         return session
     }()
 
+//    func judgeStatus<T: Codable>(by statusCode: Int, _ data: Data, _ type: T.Type) -> NetworkResult<Any> {
+//        let decoder = JSONDecoder()
+//        guard let decodedData = try? decoder.decode(GeneralResponse<T>.self, from: data)
+//        else { return .pathErr }
+//        print(decodedData)
+//        switch statusCode {
+//        case 200:
+//            return .success(decodedData.data ?? "None-Data")
+//        case 201..<300:
+//            return .success(decodedData.status)
+//        case 400..<500:
+//            return .requestErr(decodedData.status)
+//        case 500:
+//            return .serverErr
+//        default:
+//            return .networkFail
+//        }
+//    }
     func judgeStatus<T: Codable>(by statusCode: Int, _ data: Data, _ type: T.Type) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(GeneralResponse<T>.self, from: data)
+        guard let decodedData = try? decoder.decode(T.self, from: data)
         else { return .pathErr }
         print(decodedData)
         switch statusCode {
         case 200:
-            return .success(decodedData.data ?? "None-Data")
+            return .success(decodedData)
         case 201..<300:
-            return .success(decodedData.status)
+            return .success(decodedData)
         case 400..<500:
-            return .requestErr(decodedData.status)
+            return .requestErr(decodedData)
         case 500:
             return .serverErr
         default:

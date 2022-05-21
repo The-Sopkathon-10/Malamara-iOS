@@ -95,6 +95,9 @@
                             <constraint firstItem="daL-1l-OgV" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="316" id="tPJ-le-rVR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="customView" destination="daL-1l-OgV" id="tnb-js-SWX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

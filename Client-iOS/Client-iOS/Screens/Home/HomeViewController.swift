@@ -42,18 +42,50 @@ final class HomeViewController: UIViewController {
     @IBAction func playButtonDidTap(_ sender: Any) {
         
         randomNum = Int.random(in: 0..<2)
-//        print(randomNum)
+        
 
+        guard let popUp = UIStoryboard(name: "CustomPopUp", bundle: nil).instantiateViewController(withIdentifier: "CustomPopUpViewController") as? CustomPopUpViewController else { return }
+        
         if(randomNum == 0){
             yesLottieView.isHidden = false
             noLottieView.isHidden = true
-            yesLottieView.play()
+            self.yesLottieView.play()
+            popUp.decision = "yes"
+            popUp.question = questionTextField.text ?? ""
+
+
             // Yes로 서버 통신 보내고 팝업 창 띄우기
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5 ) {
+                self.present(popUp, animated: true)
+            }
+
+
+            
+            
         } else {
             noLottieView.isHidden = false
             yesLottieView.isHidden = true
-            noLottieView.play()
-            // No로 서버 통신 보내고 팝업 창 띄우기
+            self.noLottieView.play()
+            popUp.question = questionTextField.text ?? ""
+            popUp.decision = "no"
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5 ) {
+                self.present(popUp, animated: true)
+                self.questionTextField.text = .none
+
+            }
+            
+//            guard let popUp = UIStoryboard(name: "CustomPopUp", bundle: nil).instantiateViewController(withIdentifier: "CustomPopUpViewController") as? CustomPopUpViewController else { return }
+
+            
+//            present(popUp, animated: true)
+            
+        
+        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 5 ) {
+//            guard let popUp = UIStoryboard(name: "CustomPopUp", bundle: nil).instantiateViewController(withIdentifier: "CustomPopUpViewController") as? CustomPopUpViewController else { return }
+            
+//            self.present(popUp, animated: true)
         }
 
     }

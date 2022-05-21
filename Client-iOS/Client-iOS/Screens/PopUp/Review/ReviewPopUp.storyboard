@@ -102,6 +102,9 @@
                             <constraint firstItem="LYX-Ep-bGd" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Son-Cq-tCz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="2FP-xl-scw" id="u5y-6Q-dc2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
