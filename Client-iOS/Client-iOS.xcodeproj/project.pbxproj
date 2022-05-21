@@ -47,6 +47,10 @@
 		4DF98D29283931FE00FF53AC /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF98D28283931FE00FF53AC /* UICollectionView+.swift */; };
 		4DF98D2B2839321200FF53AC /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF98D2A2839321200FF53AC /* UIStackView+.swift */; };
 		4DF98D2E2839368300FF53AC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 4DF98D2D2839368300FF53AC /* Lottie */; };
+		8E0D0F0C2839777E00B6986D /* NO_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E0D0F0B2839777E00B6986D /* NO_animation.json */; };
+		8E0D0F0E2839779200B6986D /* YES_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E0D0F0D2839779200B6986D /* YES_animation.json */; };
+		8E39B86A283942EA0074B5BE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39B869283942EA0074B5BE /* HomeViewController.swift */; };
+		8E39B86D2839432C0074B5BE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E39B86C2839432C0074B5BE /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +97,10 @@
 		4DF98D26283931F500FF53AC /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 		4DF98D28283931FE00FF53AC /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
 		4DF98D2A2839321200FF53AC /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		8E0D0F0B2839777E00B6986D /* NO_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NO_animation.json; sourceTree = "<group>"; };
+		8E0D0F0D2839779200B6986D /* YES_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = YES_animation.json; sourceTree = "<group>"; };
+		8E39B869283942EA0074B5BE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8E39B86C2839432C0074B5BE /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +219,7 @@
 		4DF98CEE2839216B00FF53AC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				8E39B868283942D70074B5BE /* Home */,
 				4AD7EE5A2839531A008067AA /* PopUp */,
 				4D369BF02839428000DF2CFE /* Archive */,
 				4DF98CDE2839214000FF53AC /* ViewController.swift */,
@@ -325,6 +334,7 @@
 		4DF98D1128392CAF00FF53AC /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				8E39B86B283943080074B5BE /* Lottie */,
 				4A06B62E28396D8E004B40F8 /* Font */,
 				4DF98CE32839214300FF53AC /* Assets.xcassets */,
 				4DF98CE52839214300FF53AC /* LaunchScreen.storyboard */,
@@ -341,6 +351,24 @@
 				4DF98CE82839214300FF53AC /* Info.plist */,
 			);
 			path = Supports;
+			sourceTree = "<group>";
+		};
+		8E39B868283942D70074B5BE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8E39B869283942EA0074B5BE /* HomeViewController.swift */,
+				8E39B86C2839432C0074B5BE /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8E39B86B283943080074B5BE /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				8E0D0F0D2839779200B6986D /* YES_animation.json */,
+				8E0D0F0B2839777E00B6986D /* NO_animation.json */,
+			);
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,7 +445,10 @@
 				4DF98CE72839214300FF53AC /* LaunchScreen.storyboard in Resources */,
 				4AF22C60283977B400E645E3 /* ReviewPopUp.storyboard in Resources */,
 				4DF98CE42839214300FF53AC /* Assets.xcassets in Resources */,
+				8E0D0F0E2839779200B6986D /* YES_animation.json in Resources */,
 				4DF98CE22839214000FF53AC /* Main.storyboard in Resources */,
+				8E0D0F0C2839777E00B6986D /* NO_animation.json in Resources */,
+				8E39B86D2839432C0074B5BE /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +472,7 @@
 				4DF98CFC2839236300FF53AC /* APIEnvironment.swift in Sources */,
 				4DF98D25283931EA00FF53AC /* NSObject+.swift in Sources */,
 				4DF98D1F2839317F00FF53AC /* UIButton+.swift in Sources */,
+				8E39B86A283942EA0074B5BE /* HomeViewController.swift in Sources */,
 				4DF98CDF2839214000FF53AC /* ViewController.swift in Sources */,
 				4DF98CDB2839214000FF53AC /* AppDelegate.swift in Sources */,
 				4DF98CDD2839214000FF53AC /* SceneDelegate.swift in Sources */,
