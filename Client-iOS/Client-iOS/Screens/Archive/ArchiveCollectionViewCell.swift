@@ -31,7 +31,7 @@ class ArchiveCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "NO"
         label.textColor = UIColor(red: 1, green: 0.346, blue: 0.106, alpha: 1)
-        label.font = UIFont(name: "Inter-SemiBold", size: 40)
+        label.font = UIFont(name: "Pretendard-SemiBold", size: 40)
         return label
     }()
 
@@ -39,7 +39,7 @@ class ArchiveCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "오늘 치킨을 먹을까요?"
         label.textColor = UIColor(red: 0.071, green: 0.071, blue: 0.071, alpha: 1)
-        label.font = UIFont(name: "NotoSansCJKKR-Bold", size: 20)
+        label.font = UIFont(name: "Pretendard-Bold", size: 20)
         return label
     }()
 
@@ -48,7 +48,7 @@ class ArchiveCollectionViewCell: UICollectionViewCell {
         label.text = "후기를 남겨주세요."
         label.textColor = UIColor(red: 0.421, green: 0.421, blue: 0.421, alpha: 1)
 
-        label.font = UIFont(name: "NotoSansCJKKR-Regular", size: 14)
+        label.font = UIFont(name: "Pretendard-Regular", size: 14)
         return label
     }()
 
@@ -56,7 +56,7 @@ class ArchiveCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "실행함"
         label.textColor = UIColor(red: 0.721, green: 0.721, blue: 0.721, alpha: 1)
-        label.font = UIFont(name: "NotoSansCJKKR-Regular", size: 12)
+        label.font = UIFont(name: "Pretendard-Regular", size: 14)
         return label
     }()
 
@@ -104,6 +104,8 @@ class ArchiveCollectionViewCell: UICollectionViewCell {
             $0.trailing.equalToSuperview().inset(23)
         }
 
+        let arvc = ArchiveViewController()
+        
     }
 
     private func configUI() {
@@ -112,18 +114,18 @@ class ArchiveCollectionViewCell: UICollectionViewCell {
     }
 
     func update(data: Archive) {
-        if data.result == "YES" {
-            resultLabel.text = data.result
+        if data.decision == "YES" {
+            resultLabel.text = data.decision
             resultLabel.textColor = UIColor(red: 0.675, green: 0.82, blue: 0.047, alpha: 1)
         } else {
-            resultLabel.text = data.result
+            resultLabel.text = data.decision
             resultLabel.textColor = UIColor(red: 1, green: 0.346, blue: 0.106, alpha: 1)
         }
 
         questionLabel.text = data.question
         reviewLabel.text = data.review
 
-        if data.activity {
+        if data.isExcuted ?? true {
             activityLabel.text = "실행함"
         } else {
             activityLabel.text = "실행안함"
