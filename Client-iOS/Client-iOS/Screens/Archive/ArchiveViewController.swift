@@ -76,6 +76,7 @@ class ArchiveViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
+        setGesture()
         render()
     }
 
@@ -156,6 +157,18 @@ class ArchiveViewController: UIViewController {
 //                }
 //        }
 //    }
+
+
+    private func setGesture() {
+        let tapPressRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(_:)))
+
+        self.archiveListCollectionView.addGestureRecognizer(tapPressRecognizer)
+    }
+
+    @objc func handleTapGesture(_ sender: UITapGestureRecognizer) {
+        guard let memo = UIStoryboard(name: "ReviewPopUp", bundle: nil).instantiateViewController(withIdentifier: "ReviewPopUpViewController") as? ReviewPopUpViewController else { return }
+        self.present(memo, animated: true)
+    }
 }
 
 extension ArchiveViewController: UICollectionViewDataSource {

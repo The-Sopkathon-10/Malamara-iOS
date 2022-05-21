@@ -17,8 +17,7 @@ class ReviewPopUpViewController: UIViewController {
     }
     
     @IBAction func completeButton(_ sender: UIButton) {
-        let arvc = ArchiveViewController()
-        self.present(arvc, animated: true)
+        self.dismiss(animated: true)
     }
     
     @IBAction func cancelButton(_ sender: UIButton) {
