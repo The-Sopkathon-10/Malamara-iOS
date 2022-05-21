@@ -16,7 +16,11 @@ final class HomeViewController: UIViewController {
     @IBOutlet weak var archiveButton: UIButton!
     @IBOutlet weak var questionTextField: UITextField!
     @IBOutlet weak var labelCount: UILabel!
-    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var playButton: UIButton! {
+        didSet {
+            playButton.isEnabled = false
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +36,10 @@ final class HomeViewController: UIViewController {
         guard let count = questionTextField.text?.count else { return }
         checkMaxLength(textField: questionTextField, maxLength: 12)
         labelCount.text = "\(count)/12"
+        if questionTextField.hasText != true {
+            playButton.isEnabled = false
+        }
+        playButton.isEnabled = true
     }
     
     
@@ -42,10 +50,12 @@ final class HomeViewController: UIViewController {
 
         if(randomNum == 0){
             yesLottieView.isHidden = false
+            noLottieView.isHidden = true
             yesLottieView.play()
             // Yes로 서버 통신 보내고 팝업 창 띄우기
         } else {
             noLottieView.isHidden = false
+            yesLottieView.isHidden = true
             noLottieView.play()
             // No로 서버 통신 보내고 팝업 창 띄우기
         }
@@ -73,7 +83,7 @@ final class HomeViewController: UIViewController {
     }
     
     private lazy var yesLottieView: AnimationView = {
-        let animationView = AnimationView(name: "YES_animation")
+        let animationView = AnimationView(name: "yes_2")
         animationView.frame = CGRect(x: 0, y: 0, width: 375, height: 375)
         animationView.center = self.view.center
         animationView.contentMode = .scaleAspectFit
@@ -84,7 +94,7 @@ final class HomeViewController: UIViewController {
     }()
     
     private lazy var noLottieView: AnimationView = {
-        let animationView = AnimationView(name: "NO_animation")
+        let animationView = AnimationView(name: "no")
         animationView.frame = CGRect(x: 0, y: 0, width: 375, height: 375)
         animationView.center = self.view.center
         animationView.contentMode = .scaleAspectFit

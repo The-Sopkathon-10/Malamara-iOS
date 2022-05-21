@@ -47,8 +47,8 @@
 		4DF98D29283931FE00FF53AC /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF98D28283931FE00FF53AC /* UICollectionView+.swift */; };
 		4DF98D2B2839321200FF53AC /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF98D2A2839321200FF53AC /* UIStackView+.swift */; };
 		4DF98D2E2839368300FF53AC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 4DF98D2D2839368300FF53AC /* Lottie */; };
-		8E0D0F0C2839777E00B6986D /* NO_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E0D0F0B2839777E00B6986D /* NO_animation.json */; };
-		8E0D0F0E2839779200B6986D /* YES_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E0D0F0D2839779200B6986D /* YES_animation.json */; };
+		8E17D5B2283995D50008E4DD /* no.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E17D5B1283995D50008E4DD /* no.json */; };
+		8E17D5B628399A500008E4DD /* yes_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E17D5B528399A500008E4DD /* yes_2.json */; };
 		8E39B86A283942EA0074B5BE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39B869283942EA0074B5BE /* HomeViewController.swift */; };
 		8E39B86D2839432C0074B5BE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E39B86C2839432C0074B5BE /* Home.storyboard */; };
 /* End PBXBuildFile section */
@@ -97,8 +97,8 @@
 		4DF98D26283931F500FF53AC /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 		4DF98D28283931FE00FF53AC /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
 		4DF98D2A2839321200FF53AC /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
-		8E0D0F0B2839777E00B6986D /* NO_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NO_animation.json; sourceTree = "<group>"; };
-		8E0D0F0D2839779200B6986D /* YES_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = YES_animation.json; sourceTree = "<group>"; };
+		8E17D5B1283995D50008E4DD /* no.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = no.json; sourceTree = "<group>"; };
+		8E17D5B528399A500008E4DD /* yes_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = yes_2.json; sourceTree = "<group>"; };
 		8E39B869283942EA0074B5BE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8E39B86C2839432C0074B5BE /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -365,8 +365,8 @@
 		8E39B86B283943080074B5BE /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
-				8E0D0F0D2839779200B6986D /* YES_animation.json */,
-				8E0D0F0B2839777E00B6986D /* NO_animation.json */,
+				8E17D5B528399A500008E4DD /* yes_2.json */,
+				8E17D5B1283995D50008E4DD /* no.json */,
 			);
 			path = Lottie;
 			sourceTree = "<group>";
@@ -445,9 +445,9 @@
 				4DF98CE72839214300FF53AC /* LaunchScreen.storyboard in Resources */,
 				4AF22C60283977B400E645E3 /* ReviewPopUp.storyboard in Resources */,
 				4DF98CE42839214300FF53AC /* Assets.xcassets in Resources */,
-				8E0D0F0E2839779200B6986D /* YES_animation.json in Resources */,
+				8E17D5B628399A500008E4DD /* yes_2.json in Resources */,
+				8E17D5B2283995D50008E4DD /* no.json in Resources */,
 				4DF98CE22839214000FF53AC /* Main.storyboard in Resources */,
-				8E0D0F0C2839777E00B6986D /* NO_animation.json in Resources */,
 				8E39B86D2839432C0074B5BE /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
