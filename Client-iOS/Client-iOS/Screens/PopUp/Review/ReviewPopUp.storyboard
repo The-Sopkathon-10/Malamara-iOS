@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansCJKkr-Bold.otf">
+            <string>NotoSansCJKkr-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Review Pop Up View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ReviewPopUpViewController" id="Y6W-OH-hqX" customClass="ReviewPopUpViewController" customModule="Client_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LYX-Ep-bGd">
+                                <rect key="frame" x="37.666666666666657" y="186" width="300" height="440"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="후기 남기기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evL-li-8cZ">
+                                        <rect key="frame" x="34" y="25" width="98" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKkr-Bold" family="Noto Sans CJK KR" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2FP-xl-scw">
+                                        <rect key="frame" x="24" y="62" width="252" height="306"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="306" id="BBa-pW-t8U"/>
+                                            <constraint firstAttribute="width" constant="252" id="FCV-am-Ips"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s9I-Se-nHE">
+                                        <rect key="frame" x="0.0" y="383" width="300" height="1"/>
+                                        <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="BJX-t5-dLy"/>
+                                            <constraint firstAttribute="height" constant="1" id="eSe-8P-Zan"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYW-lB-pUj">
+                                        <rect key="frame" x="50" y="400" width="53.333333333333343" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="y6w-AW-ohP"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="취소">
+                                            <fontDescription key="titleFontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cancelButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Z9f-ej-wZV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7G5-Fa-dks">
+                                        <rect key="frame" x="196" y="400" width="54" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="FiE-6d-pLf"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="완료">
+                                            <fontDescription key="titleFontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="completeButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DRL-e0-Hay"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="4sa-yu-ydY"/>
+                                    <constraint firstAttribute="height" constant="440" id="7V2-hV-fFB"/>
+                                    <constraint firstItem="2FP-xl-scw" firstAttribute="top" secondItem="LYX-Ep-bGd" secondAttribute="top" constant="62" id="Amy-SO-xOL"/>
+                                    <constraint firstItem="2FP-xl-scw" firstAttribute="centerX" secondItem="LYX-Ep-bGd" secondAttribute="centerX" id="Flf-2I-D8y"/>
+                                    <constraint firstAttribute="bottom" secondItem="s9I-Se-nHE" secondAttribute="bottom" constant="56" id="HPu-Hk-XvJ"/>
+                                    <constraint firstItem="s9I-Se-nHE" firstAttribute="leading" secondItem="LYX-Ep-bGd" secondAttribute="leading" id="S7j-Ba-0cY"/>
+                                    <constraint firstAttribute="bottom" secondItem="IYW-lB-pUj" secondAttribute="bottom" constant="16" id="XGd-Ss-bqN"/>
+                                    <constraint firstAttribute="bottom" secondItem="7G5-Fa-dks" secondAttribute="bottom" constant="16" id="Zfd-5p-oLe"/>
+                                    <constraint firstAttribute="trailing" secondItem="7G5-Fa-dks" secondAttribute="trailing" constant="50" id="iuz-hj-cKc"/>
+                                    <constraint firstItem="IYW-lB-pUj" firstAttribute="leading" secondItem="LYX-Ep-bGd" secondAttribute="leading" constant="50" id="qZb-kD-xke"/>
+                                    <constraint firstAttribute="trailing" secondItem="s9I-Se-nHE" secondAttribute="trailing" id="tDP-bU-DjN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LYX-Ep-bGd" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="186" id="Jiq-6d-e2T"/>
+                            <constraint firstItem="LYX-Ep-bGd" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Son-Cq-tCz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.6956521739130448" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

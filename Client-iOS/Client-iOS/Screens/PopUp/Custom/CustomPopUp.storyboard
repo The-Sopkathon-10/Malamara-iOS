@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansCJKkr-Medium.otf">
+            <string>NotoSansCJKkr-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Custom Pop Up View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CustomPopUpViewController" id="Y6W-OH-hqX" customClass="CustomPopUpViewController" customModule="Client_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="daL-1l-OgV">
+                                <rect key="frame" x="32" y="316" width="310" height="180"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결정이 마음에 드시나요?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnL-ao-LXz">
+                                        <rect key="frame" x="53.666666666666686" y="60" width="203" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="2Vy-Lf-zzb"/>
+                                            <constraint firstAttribute="width" constant="203" id="toD-la-Zef"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="20"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="id2-Qp-biB">
+                                        <rect key="frame" x="30" y="125" width="100" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="ZjP-8Q-IgL"/>
+                                            <constraint firstAttribute="height" constant="50" id="adM-Kf-qSL"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="아니오">
+                                            <fontDescription key="titleFontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="noButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nrt-Sc-bBl"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c00-oJ-eCe">
+                                        <rect key="frame" x="0.0" y="123" width="310" height="1"/>
+                                        <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="ikm-8f-AfD"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xto-hb-46l">
+                                        <rect key="frame" x="180" y="125" width="100" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Cwr-S0-bUX"/>
+                                            <constraint firstAttribute="width" constant="100" id="mE7-W5-7lK"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="네">
+                                            <fontDescription key="titleFontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="yesButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iKw-Id-djh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="xto-hb-46l" secondAttribute="bottom" constant="5" id="9hz-ZW-as5"/>
+                                    <constraint firstItem="PnL-ao-LXz" firstAttribute="top" secondItem="daL-1l-OgV" secondAttribute="top" constant="60" id="B4B-yh-5w9"/>
+                                    <constraint firstAttribute="height" constant="180" id="DVW-CV-Cbf"/>
+                                    <constraint firstAttribute="bottom" secondItem="id2-Qp-biB" secondAttribute="bottom" constant="5" id="Emy-DH-Ujk"/>
+                                    <constraint firstAttribute="width" constant="310" id="M8p-RC-cMU"/>
+                                    <constraint firstItem="id2-Qp-biB" firstAttribute="leading" secondItem="daL-1l-OgV" secondAttribute="leading" constant="30" id="TfA-y0-vmu"/>
+                                    <constraint firstAttribute="bottom" secondItem="c00-oJ-eCe" secondAttribute="bottom" constant="56" id="UrI-gw-249"/>
+                                    <constraint firstItem="PnL-ao-LXz" firstAttribute="centerX" secondItem="daL-1l-OgV" secondAttribute="centerX" id="ZSP-6F-9c0"/>
+                                    <constraint firstAttribute="trailing" secondItem="c00-oJ-eCe" secondAttribute="trailing" id="d77-7t-d7F"/>
+                                    <constraint firstItem="c00-oJ-eCe" firstAttribute="leading" secondItem="daL-1l-OgV" secondAttribute="leading" id="oQD-nm-aE9"/>
+                                    <constraint firstAttribute="trailing" secondItem="xto-hb-46l" secondAttribute="trailing" constant="30" id="ogJ-bb-jZr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.19632139900662252" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="daL-1l-OgV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="kd0-gd-C7W"/>
+                            <constraint firstItem="daL-1l-OgV" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="316" id="tPJ-le-rVR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.399999999999999" y="93.103448275862078"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

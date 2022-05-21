@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AD7EE5E283953B5008067AA /* CustomPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD7EE5D283953B5008067AA /* CustomPopUpViewController.swift */; };
+		4AD7EE60283953C5008067AA /* CustomPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD7EE5F283953C5008067AA /* CustomPopUp.storyboard */; };
+		4AF22C5E283977A000E645E3 /* ReviewPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF22C5D283977A000E645E3 /* ReviewPopUpViewController.swift */; };
+		4AF22C60283977B400E645E3 /* ReviewPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AF22C5F283977B400E645E3 /* ReviewPopUp.storyboard */; };
 		4D369BEF28393CBA00DF2CFE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4D369BEE28393CBA00DF2CFE /* SnapKit */; };
 		4D369BF2283942C900DF2CFE /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D369BF1283942C900DF2CFE /* ArchiveViewController.swift */; };
 		4D369BF72839541B00DF2CFE /* ArchiveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D369BF62839541B00DF2CFE /* ArchiveCollectionViewCell.swift */; };
@@ -46,6 +50,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A06B63328396DFD004B40F8 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		4A06B63528396DFE004B40F8 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
+		4A06B63628396DFF004B40F8 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		4AD7EE5D283953B5008067AA /* CustomPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopUpViewController.swift; sourceTree = "<group>"; };
+		4AD7EE5F283953C5008067AA /* CustomPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomPopUp.storyboard; sourceTree = "<group>"; };
+		4AF22C5A2839771C00E645E3 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		4AF22C5D283977A000E645E3 /* ReviewPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPopUpViewController.swift; sourceTree = "<group>"; };
+		4AF22C5F283977B400E645E3 /* ReviewPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReviewPopUp.storyboard; sourceTree = "<group>"; };
+		4AF22C612839783100E645E3 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		4D369BF1283942C900DF2CFE /* ArchiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveViewController.swift; sourceTree = "<group>"; };
 		4D369BF62839541B00DF2CFE /* ArchiveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveCollectionViewCell.swift; sourceTree = "<group>"; };
 		4D369BF828395AC700DF2CFE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -97,6 +110,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A06B62D28396D7D004B40F8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		4A06B62E28396D8E004B40F8 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				4AF22C592839770C00E645E3 /* Inter */,
+				4A06B63028396DBA004B40F8 /* NotoSansCJKkr */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		4A06B63028396DBA004B40F8 /* NotoSansCJKkr */ = {
+			isa = PBXGroup;
+			children = (
+				4A06B63328396DFD004B40F8 /* NotoSansCJKkr-Bold.otf */,
+				4A06B63528396DFE004B40F8 /* NotoSansCJKkr-Medium.otf */,
+				4A06B63628396DFF004B40F8 /* NotoSansCJKkr-Regular.otf */,
+			);
+			path = NotoSansCJKkr;
+			sourceTree = "<group>";
+		};
+		4AD7EE5A2839531A008067AA /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				4AF22C5C2839775500E645E3 /* Review */,
+				4AF22C5B2839773F00E645E3 /* Custom */,
+			);
+			path = PopUp;
+			sourceTree = "<group>";
+		};
+		4AF22C592839770C00E645E3 /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				4AF22C612839783100E645E3 /* Inter-SemiBold.ttf */,
+				4AF22C5A2839771C00E645E3 /* Inter-Regular.ttf */,
+			);
+			path = Inter;
+			sourceTree = "<group>";
+		};
+		4AF22C5B2839773F00E645E3 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				4AD7EE5D283953B5008067AA /* CustomPopUpViewController.swift */,
+				4AD7EE5F283953C5008067AA /* CustomPopUp.storyboard */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		4AF22C5C2839775500E645E3 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				4AF22C5D283977A000E645E3 /* ReviewPopUpViewController.swift */,
+				4AF22C5F283977B400E645E3 /* ReviewPopUp.storyboard */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
 		4D369BF02839428000DF2CFE /* Archive */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +200,7 @@
 		4DF98CD92839214000FF53AC /* Client-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				4A06B62D28396D7D004B40F8 /* Resource */,
 				4DF98CF02839217C00FF53AC /* Network */,
 				4DF98CEF2839217400FF53AC /* Global */,
 				4DF98CEE2839216B00FF53AC /* Screens */,
@@ -135,6 +211,7 @@
 		4DF98CEE2839216B00FF53AC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				4AD7EE5A2839531A008067AA /* PopUp */,
 				4D369BF02839428000DF2CFE /* Archive */,
 				4DF98CDE2839214000FF53AC /* ViewController.swift */,
 			);
@@ -248,6 +325,7 @@
 		4DF98D1128392CAF00FF53AC /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				4A06B62E28396D8E004B40F8 /* Font */,
 				4DF98CE32839214300FF53AC /* Assets.xcassets */,
 				4DF98CE52839214300FF53AC /* LaunchScreen.storyboard */,
 				4DF98CE02839214000FF53AC /* Main.storyboard */,
@@ -335,7 +413,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD7EE60283953C5008067AA /* CustomPopUp.storyboard in Resources */,
 				4DF98CE72839214300FF53AC /* LaunchScreen.storyboard in Resources */,
+				4AF22C60283977B400E645E3 /* ReviewPopUp.storyboard in Resources */,
 				4DF98CE42839214300FF53AC /* Assets.xcassets in Resources */,
 				4DF98CE22839214000FF53AC /* Main.storyboard in Resources */,
 			);
@@ -348,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AF22C5E283977A000E645E3 /* ReviewPopUpViewController.swift in Sources */,
 				4D369BF72839541B00DF2CFE /* ArchiveCollectionViewCell.swift in Sources */,
 				4DF98D2B2839321200FF53AC /* UIStackView+.swift in Sources */,
 				4DF98D23283931DA00FF53AC /* Adjusted+.swift in Sources */,
@@ -376,6 +457,7 @@
 				4DF98D04283927F700FF53AC /* GenaralResponse.swift in Sources */,
 				4DF98D1A283930FD00FF53AC /* UITextField+.swift in Sources */,
 				4DF98D16283930D000FF53AC /* UIColor+.swift in Sources */,
+				4AD7EE5E283953B5008067AA /* CustomPopUpViewController.swift in Sources */,
 				4DF98D27283931F500FF53AC /* UITableView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,7 +610,7 @@
 				INFOPLIST_FILE = "Client-iOS/Global/Supports/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = CustomPopUp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -556,7 +638,7 @@
 				INFOPLIST_FILE = "Client-iOS/Global/Supports/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = CustomPopUp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
