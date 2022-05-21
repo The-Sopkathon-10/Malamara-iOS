@@ -1,22 +1,43 @@
-# iOS
+# 🍙 말아? 마라 ~
 
 ### ✨ 서비스 이름과 소개 
 
 | 서비스명   | 서비스 소개
 | -------- | :-----: | 
-| 마라 어쩌구..           | 김밥 어쩌구 .. |
+| 말아마라           | 이제 고민 그만하고, 김밥이나 말자. Don’t worry, Just roll it. |
 
+</br>
+
+
+### 🍗 iOS-Developers
+
+| 김수연 | 윤수빈 | 황찬미  |
+| ----------------- | :-----: | ----- |
+| <img src="https://user-images.githubusercontent.com/81313960/169660549-8a94f238-0b78-4e84-8d06-4a4214041e91.png" width="200">|<img src="https://user-images.githubusercontent.com/81313960/169660604-600010dd-b094-49e3-a53a-aff58d2ac3cf.png" width="200">|<img src="https://user-images.githubusercontent.com/81313960/169660606-12cd00ef-767e-4955-84fd-4f9433936af7.png" width="200">|
+
+</br>
 
 ### 🌿 개발 담당 부분
 
 | 담당 뷰      | 담당자 |   구현 기능 설명   |
 | ----------------- | :-----: | ----- |
-| Alamofire           | `김수연` |  |
-| SnapKit           | `윤수빈` |  |
-| SnapKit           | `황찬미` |  |
+| ArchivingView           | `김수연` | 고민한 질문, 결과, 작성한 후기를 아카이빙 하는 뷰 구현 |
+| HomeView - KimbabView           | `윤수빈` | 고민하고 있는 질문에 대해 결과를 요청하는 뷰 구현 |
+| PopUp - Result, Review           | `황찬미` | 나온 결과를 따를지 따르지않을지 결정하는 팝업, 나온 결과에 대한 후기를 작성하는 팝업 구현 |
 
+
+</br>
 
 ### 🗂 Foldering
+
+<img width="226" alt="image" src="https://user-images.githubusercontent.com/81313960/169660686-60ce6385-e6aa-4ef4-b940-93f5a7210dc1.png">
+
+</br>
+
+
+### 🍭 Library
+
+<img width="262" alt="image" src="https://user-images.githubusercontent.com/81313960/169661035-b69b96d8-457d-44d0-b1fc-e04782eaa587.png">
 
 
 
@@ -35,6 +56,7 @@
 - `[Improve]` : 향상이 있을 때 사용합니다.
 - `[Refactor]` : 전면 수정이 있을 때 사용합니다
 
+</br>
 
 ### 🌀 Git Branch
 
@@ -49,6 +71,8 @@ dev-suyeon
 dev-chanmi
 ```
 
+</br>
+
 ### 🐥 Commit, Pull, Push, Issue, PR
 
 1. 새로운 작업이 진행 전, Pull을 반드시 진행합니다.
@@ -56,12 +80,14 @@ dev-chanmi
 3. Issue에 관한 Commit과 Push는 본인 브랜치로 진행합니다.
 4. PR은 모든 작업이 완료된 후 진행합니다.
 
+</br>
 
 ### 👊🏻 Code convention
 
 [StyleShare/swift-style-guide](https://github.com/StyleShare/swift-style-guide) 를 기본으로 따르고 필요에 따라 추가한다.
 
 
+</br>
 ### 📷 Team Photo
 <img src="https://user-images.githubusercontent.com/81313960/169656982-a24e9a9c-27d7-46c9-8897-ec1f70c11add.jpg" width="400">
 
