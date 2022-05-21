@@ -28,3 +28,9 @@ struct GeneralResponse<T: Codable>: Codable {
         data = (try? values.decode(T.self, forKey: .data)) ?? nil
     }
 }
+
+struct QuestionResponse: Codable {
+    var status: Int
+    var success: Bool?
+    var message: String?
+}

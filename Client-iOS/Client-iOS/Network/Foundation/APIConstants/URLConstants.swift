@@ -15,5 +15,5 @@ struct URLConstants {
 
     static let signUp = "/auth/signup"
     static let signIn = "/auth/signin"
-    
+    static let questionResult = "/question/decision"
 }

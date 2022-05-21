@@ -8,10 +8,12 @@
 import UIKit
 
 class ReviewPopUpViewController: UIViewController {
-
+    
+    @IBOutlet weak var textView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        textView.layer.cornerRadius = 30
     }
     
     @IBAction func completeButton(_ sender: UIButton) {
