@@ -57,7 +57,12 @@ dev-chanmi
 
 ### 👊🏻 Code convention
 
+[StyleShare/swift-style-guide](https://github.com/StyleShare/swift-style-guide) 를 기본으로 따르고 필요에 따라 추가한다.
+
 
 ### 📷 Team Photo
+<img src="https://user-images.githubusercontent.com/81313960/169656982-a24e9a9c-27d7-46c9-8897-ec1f70c11add.jpg" width="400">
+
+
 
 
