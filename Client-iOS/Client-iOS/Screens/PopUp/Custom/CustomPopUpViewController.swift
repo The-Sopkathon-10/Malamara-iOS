@@ -45,6 +45,7 @@ class CustomPopUpViewController: UIViewController {
                 return
             }
         }
-        dismiss(animated: true)
+        let ar = ArchiveViewController()
+        self.present(ar, animated: true)
     }
 }

@@ -25,7 +25,8 @@ final class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setLottieView()
-        setDelegate()
+        questionTextField.delegate = self
+//        setDelegate()
         setUI()
     }
     
@@ -102,7 +103,6 @@ final class HomeViewController: UIViewController {
     }
 
     private func setDelegate() {
-        questionTextField.delegate = self
     }
     
     private func setLottieView () {

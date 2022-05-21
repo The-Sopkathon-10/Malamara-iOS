@@ -41,6 +41,9 @@ class ArchiveViewController: UIViewController {
     private lazy var backButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(named: "ic_back"), for: .normal)
+        button.press {
+            self.dismiss(animated: true)
+        }
         return button
     }()
 
@@ -134,25 +137,25 @@ class ArchiveViewController: UIViewController {
         // categoryTitleLabel.text = data.title
     }
 
-    private func getUserArchive() {
-        ArchiveService.shared.requestGetUser(id: "6288f9cbaa918a3a19832bc4") {
-            result in
-                switch result {
-                case .success(let data):
-                    if let data = data as? [Archive] {
-                        print("되는지?")
-                    }
-                case .requestErr(_):
-                    print("rquestErr")
-                case .pathErr:
-                    print("pathErr")
-                case .serverErr:
-                    print("serverErr")
-                case .networkFail:
-                    print("networkFail")
-                }
-        }
-    }
+//    private func getUserArchive() {
+//        ArchiveService.shared.requestGetUser(id: "6288f9cbaa918a3a19832bc4") {
+//            result in
+//                switch result {
+//                case .success(let data):
+//                    if let data = data as? [Archive] {
+//                        print("되는지?")
+//                    }
+//                case .requestErr(_):
+//                    print("rquestErr")
+//                case .pathErr:
+//                    print("pathErr")
+//                case .serverErr:
+//                    print("serverErr")
+//                case .networkFail:
+//                    print("networkFail")
+//                }
+//        }
+//    }
 }
 
 extension ArchiveViewController: UICollectionViewDataSource {
@@ -166,5 +169,12 @@ extension ArchiveViewController: UICollectionViewDataSource {
         cell.update(data: archiveList[indexPath.row])
         return cell
 
+    }
+}
+
+extension ArchiveViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let memo = UIStoryboard(name: "ReviewPopUp", bundle: nil).instantiateViewController(withIdentifier: "ReviewPopUpViewController") as? ReviewPopUpViewController else { return }
+        self.present(memo, animated: true)
     }
 }
