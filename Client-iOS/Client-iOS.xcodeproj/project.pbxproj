@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D369BEF28393CBA00DF2CFE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4D369BEE28393CBA00DF2CFE /* SnapKit */; };
+		4D369BF2283942C900DF2CFE /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D369BF1283942C900DF2CFE /* ArchiveViewController.swift */; };
+		4D369BF72839541B00DF2CFE /* ArchiveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D369BF62839541B00DF2CFE /* ArchiveCollectionViewCell.swift */; };
+		4D369BF928395AC700DF2CFE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D369BF828395AC700DF2CFE /* User.swift */; };
+		4D369BFC283965F200DF2CFE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4D369BFB283965F200DF2CFE /* Kingfisher */; };
+		4D369BFE2839715A00DF2CFE /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D369BFD2839715A00DF2CFE /* Archive.swift */; };
 		4DF98CDB2839214000FF53AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF98CDA2839214000FF53AC /* AppDelegate.swift */; };
 		4DF98CDD2839214000FF53AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF98CDC2839214000FF53AC /* SceneDelegate.swift */; };
 		4DF98CDF2839214000FF53AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF98CDE2839214000FF53AC /* ViewController.swift */; };
@@ -40,6 +46,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D369BF1283942C900DF2CFE /* ArchiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveViewController.swift; sourceTree = "<group>"; };
+		4D369BF62839541B00DF2CFE /* ArchiveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveCollectionViewCell.swift; sourceTree = "<group>"; };
+		4D369BF828395AC700DF2CFE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4D369BFD2839715A00DF2CFE /* Archive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
 		4DF98CD72839214000FF53AC /* Client-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Client-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF98CDA2839214000FF53AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DF98CDC2839214000FF53AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D369BFC283965F200DF2CFE /* Kingfisher in Frameworks */,
+				4D369BEF28393CBA00DF2CFE /* SnapKit in Frameworks */,
 				4DF98D07283928CA00FF53AC /* Alamofire in Frameworks */,
 				4DF98D2E2839368300FF53AC /* Lottie in Frameworks */,
 			);
@@ -85,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D369BF02839428000DF2CFE /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				4D369BF1283942C900DF2CFE /* ArchiveViewController.swift */,
+				4D369BF62839541B00DF2CFE /* ArchiveCollectionViewCell.swift */,
+			);
+			path = Archive;
+			sourceTree = "<group>";
+		};
 		4DF98CCE2839214000FF53AC = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +135,7 @@
 		4DF98CEE2839216B00FF53AC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				4D369BF02839428000DF2CFE /* Archive */,
 				4DF98CDE2839214000FF53AC /* ViewController.swift */,
 			);
 			path = Screens;
@@ -159,6 +181,8 @@
 			children = (
 				4DF98D03283927F700FF53AC /* GenaralResponse.swift */,
 				4DF98D0A283929DB00FF53AC /* ExampleModel.swift */,
+				4D369BF828395AC700DF2CFE /* User.swift */,
+				4D369BFD2839715A00DF2CFE /* Archive.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,6 +284,8 @@
 			packageProductDependencies = (
 				4DF98D06283928CA00FF53AC /* Alamofire */,
 				4DF98D2D2839368300FF53AC /* Lottie */,
+				4D369BEE28393CBA00DF2CFE /* SnapKit */,
+				4D369BFB283965F200DF2CFE /* Kingfisher */,
 			);
 			productName = "Client-iOS";
 			productReference = 4DF98CD72839214000FF53AC /* Client-iOS.app */;
@@ -292,6 +318,8 @@
 			packageReferences = (
 				4DF98D05283928CA00FF53AC /* XCRemoteSwiftPackageReference "Alamofire" */,
 				4DF98D2C2839368300FF53AC /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				4D369BED28393CBA00DF2CFE /* XCRemoteSwiftPackageReference "SnapKit" */,
+				4D369BFA283965F200DF2CFE /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 4DF98CD82839214000FF53AC /* Products */;
 			projectDirPath = "";
@@ -320,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D369BF72839541B00DF2CFE /* ArchiveCollectionViewCell.swift in Sources */,
 				4DF98D2B2839321200FF53AC /* UIStackView+.swift in Sources */,
 				4DF98D23283931DA00FF53AC /* Adjusted+.swift in Sources */,
 				4DF98CF72839233400FF53AC /* NetworkConstants.swift in Sources */,
@@ -335,10 +364,13 @@
 				4DF98CDB2839214000FF53AC /* AppDelegate.swift in Sources */,
 				4DF98CDD2839214000FF53AC /* SceneDelegate.swift in Sources */,
 				4DF98D0D283929E900FF53AC /* ExampleService.swift in Sources */,
+				4D369BF2283942C900DF2CFE /* ArchiveViewController.swift in Sources */,
 				4DF98CFE2839236C00FF53AC /* NetworkResult.swift in Sources */,
 				4DF98D142839304500FF53AC /* UIFont+.swift in Sources */,
 				4DF98D002839237700FF53AC /* BaseRouter.swift in Sources */,
+				4D369BF928395AC700DF2CFE /* User.swift in Sources */,
 				4DF98D21283931C400FF53AC /* UIViewController+.swift in Sources */,
+				4D369BFE2839715A00DF2CFE /* Archive.swift in Sources */,
 				4DF98D18283930D800FF53AC /* UIView+.swift in Sources */,
 				4DF98D02283923EE00FF53AC /* BaseService.swift in Sources */,
 				4DF98D04283927F700FF53AC /* GenaralResponse.swift in Sources */,
@@ -564,6 +596,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4D369BED28393CBA00DF2CFE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		4D369BFA283965F200DF2CFE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		4DF98D05283928CA00FF53AC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -583,6 +631,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4D369BEE28393CBA00DF2CFE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D369BED28393CBA00DF2CFE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		4D369BFB283965F200DF2CFE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D369BFA283965F200DF2CFE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		4DF98D06283928CA00FF53AC /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4DF98D05283928CA00FF53AC /* XCRemoteSwiftPackageReference "Alamofire" */;
