@@ -17,6 +17,8 @@
 		4D369BF928395AC700DF2CFE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D369BF828395AC700DF2CFE /* User.swift */; };
 		4D369BFC283965F200DF2CFE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4D369BFB283965F200DF2CFE /* Kingfisher */; };
 		4D369BFE2839715A00DF2CFE /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D369BFD2839715A00DF2CFE /* Archive.swift */; };
+		4D369C00283993FC00DF2CFE /* ArchiveRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D369BFF283993FC00DF2CFE /* ArchiveRouter.swift */; };
+		4D369C022839969B00DF2CFE /* ArchiveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D369C012839969B00DF2CFE /* ArchiveService.swift */; };
 		4DF98CDB2839214000FF53AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF98CDA2839214000FF53AC /* AppDelegate.swift */; };
 		4DF98CDD2839214000FF53AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF98CDC2839214000FF53AC /* SceneDelegate.swift */; };
 		4DF98CDF2839214000FF53AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF98CDE2839214000FF53AC /* ViewController.swift */; };
@@ -63,6 +65,8 @@
 		4D369BF62839541B00DF2CFE /* ArchiveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveCollectionViewCell.swift; sourceTree = "<group>"; };
 		4D369BF828395AC700DF2CFE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4D369BFD2839715A00DF2CFE /* Archive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
+		4D369BFF283993FC00DF2CFE /* ArchiveRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveRouter.swift; sourceTree = "<group>"; };
+		4D369C012839969B00DF2CFE /* ArchiveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveService.swift; sourceTree = "<group>"; };
 		4DF98CD72839214000FF53AC /* Client-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Client-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF98CDA2839214000FF53AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DF98CDC2839214000FF53AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -268,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				4DF98D08283929CD00FF53AC /* ExampleRouter.swift */,
+				4D369BFF283993FC00DF2CFE /* ArchiveRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				4DF98D0C283929E900FF53AC /* ExampleService.swift */,
+				4D369C012839969B00DF2CFE /* ArchiveService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -445,6 +451,8 @@
 				4DF98CDB2839214000FF53AC /* AppDelegate.swift in Sources */,
 				4DF98CDD2839214000FF53AC /* SceneDelegate.swift in Sources */,
 				4DF98D0D283929E900FF53AC /* ExampleService.swift in Sources */,
+				4D369C00283993FC00DF2CFE /* ArchiveRouter.swift in Sources */,
+				4D369C022839969B00DF2CFE /* ArchiveService.swift in Sources */,
 				4D369BF2283942C900DF2CFE /* ArchiveViewController.swift in Sources */,
 				4DF98CFE2839236C00FF53AC /* NetworkResult.swift in Sources */,
 				4DF98D142839304500FF53AC /* UIFont+.swift in Sources */,

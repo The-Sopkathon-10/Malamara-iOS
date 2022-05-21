@@ -12,12 +12,11 @@ import SnapKit
 
 class ArchiveViewController: UIViewController {
 
-    private var userInfo: [User] = []
-    private var archiveList: [Archive] = Archive.dummy
+    private var archiveList: [Question] = []
 
     private let profileImageView: UIImageView = {
         let iv = UIImageView()
-        iv.image = UIImage(named: "dummyimg")
+        iv.image = UIImage(named: "profileimg")
         iv.layer.cornerRadius = iv.frame.height / 2
         iv.clipsToBounds = true
         return iv
@@ -26,7 +25,7 @@ class ArchiveViewController: UIViewController {
     private let userNameLabel: UILabel = {
         let label = UILabel()
         label.text = "결정어려워님,"
-        label.font = .systemFont(ofSize: 20)
+        label.font = UIFont(name: "NotoSansCJKKR-Medium", size: 20)
         label.textColor = .black
         return label
     }()
@@ -34,7 +33,7 @@ class ArchiveViewController: UIViewController {
     private let userWorryLabel: UILabel = {
         let label = UILabel()
         label.text = "N개의 고민이 말아졌어요"
-        label.font = .systemFont(ofSize: 20)
+        label.font = UIFont(name: "NotoSansCJKKR-Regular", size: 20)
         label.textColor = .black
         return label
     }()
@@ -67,6 +66,9 @@ class ArchiveViewController: UIViewController {
     }()
 
 
+    override func viewWillAppear(_ animated: Bool) {
+        getUserArchive()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,7 +96,7 @@ class ArchiveViewController: UIViewController {
         profileImageView.clipsToBounds = true
 
         userNameLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(112)
+            $0.top.equalToSuperview().inset(120)
             $0.leading.equalTo(profileImageView.snp.trailing).offset(16)
         }
 
@@ -130,6 +132,26 @@ class ArchiveViewController: UIViewController {
             profileImageView.kf.setImage(with: url)
         }
         // categoryTitleLabel.text = data.title
+    }
+
+    private func getUserArchive() {
+        ArchiveService.shared.requestGetUser(id: "6288f9cbaa918a3a19832bc4") {
+            result in
+                switch result {
+                case .success(let data):
+                    if let data = data as? [Question] {
+                        print("되는지?")
+                    }
+                case .requestErr(_):
+                    print("rquestErr")
+                case .pathErr:
+                    print("pathErr")
+                case .serverErr:
+                    print("serverErr")
+                case .networkFail:
+                    print("networkFail")
+                }
+        }
     }
 }
 

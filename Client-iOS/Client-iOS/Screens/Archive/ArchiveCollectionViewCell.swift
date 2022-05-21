@@ -111,19 +111,19 @@ class ArchiveCollectionViewCell: UICollectionViewCell {
         cellBackgroundView.makeShadow(color: UIColor(red: 0.706, green: 0.706, blue: 0.706, alpha: 0.3), opacity: 1, offset: CGSize(width: 1, height: 3), radius: 5)
     }
 
-    func update(data: Archive) {
-        if data.result == "YES" {
-            resultLabel.text = data.result
+    func update(data: Question) {
+        if data.decision == "YES" {
+            resultLabel.text = data.decision
             resultLabel.textColor = UIColor(red: 0.675, green: 0.82, blue: 0.047, alpha: 1)
         } else {
-            resultLabel.text = data.result
+            resultLabel.text = data.decision
             resultLabel.textColor = UIColor(red: 1, green: 0.346, blue: 0.106, alpha: 1)
         }
 
         questionLabel.text = data.question
         reviewLabel.text = data.review
 
-        if data.activity {
+        if data.isExcuted ?? true {
             activityLabel.text = "실행함"
         } else {
             activityLabel.text = "실행안함"
