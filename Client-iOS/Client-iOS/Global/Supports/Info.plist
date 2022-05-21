@@ -25,7 +25,6 @@
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
 					<string>Home</string>
-					<string>CustomPopUp</string>
 				</dict>
 			</array>
 		</dict>
