@@ -95,7 +95,9 @@ dev-chanmi
 
 
 </br>
+
 ### 📷 Team Photo
+
 
 <img src="https://user-images.githubusercontent.com/81313960/169656982-a24e9a9c-27d7-46c9-8897-ec1f70c11add.jpg" width="400">
 
